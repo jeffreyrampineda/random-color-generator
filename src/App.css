@@ -5,3 +5,7 @@
 .center {
     text-align: center;
 }
+
+.container-svg > svg {
+    transition: 0.4s;
+}

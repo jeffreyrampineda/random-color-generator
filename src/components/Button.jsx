@@ -5,10 +5,11 @@ function Button({ children, backgroundColor, textColor, action }) {
     const buttonStyle = {
         'backgroundColor': backgroundColor,
         'color': textColor,
+        'boxShadow': `0 4px 16px 0 ${backgroundColor}`,
     }
 
     return (
-        <button style={buttonStyle} onClick={action}>
+        <button className="btn" style={buttonStyle} onClick={action}>
             {children}
         </button>
     );
