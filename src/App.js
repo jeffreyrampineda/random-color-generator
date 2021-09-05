@@ -60,15 +60,12 @@ function App() {
   const devicesSvgRef = useRef();
 
   useEffect(() => {
-    devicesSvgRef.current.getElementById('computer_text1').textContent = currentColor;
-    devicesSvgRef.current.getElementById('computer_text1').setAttribute("fill", getLightOrDark(currentColor));
+    const dynamicTexts = devicesSvgRef.current.getElementsByClassName('dynamicText');
 
-    devicesSvgRef.current.getElementById('ipad_text1').textContent = currentColor;
-    devicesSvgRef.current.getElementById('ipad_text1').setAttribute("fill", getLightOrDark(currentColor));
-
-    devicesSvgRef.current.getElementById('phone_text1').textContent = currentColor;
-    devicesSvgRef.current.getElementById('phone_text1').setAttribute("fill", getLightOrDark(currentColor));
-
+    for (let element of dynamicTexts) {
+      element.textContent = currentColor;
+      element.setAttribute("fill", getLightOrDark(currentColor));
+    }
   }, [currentColor]);
 
   return (
