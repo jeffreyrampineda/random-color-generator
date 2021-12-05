@@ -1,5 +1,7 @@
 {
   "name": "random-color-generator",
+  "description": "Web application that generates a random color and displays them onto the screens of multiple devices.",
+  "author": "Jeffrey Ram Pineda <jeffreyrampineda@gmail.com> (https://jeffreyram.pineda.org/)",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
