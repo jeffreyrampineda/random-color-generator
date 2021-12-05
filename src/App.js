@@ -51,9 +51,9 @@ function App() {
   const getLightOrDark = (backgroundColor) => {
     if (isColorLight(backgroundColor)) {
       // Use dark text color.
-      return '#222';
+      return 'var(--dark)';
     }
-    return '#fff';
+    return 'var(--light)';
   }
 
   const [currentColor, setCurrentColor] = useState(() => generateRandomColor());

@@ -9,3 +9,8 @@
 .container-svg > svg {
     transition: 0.4s;
 }
+
+.color-control > p {
+    color: var(--dark);
+    margin: 64px;
+}
